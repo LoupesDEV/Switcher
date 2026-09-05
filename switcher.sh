@@ -246,7 +246,6 @@ sudo -v
 
 switch_to_sabrina() {
     COLOR=$1
-    echo "Using $COLOR"
 
     HEART_EMOJI=$(get_heart_for_color "$COLOR")
     WALLPAPER_PATH=$(get_wallpaper_path "$COLOR")
