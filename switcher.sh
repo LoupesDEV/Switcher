@@ -244,26 +244,25 @@ setup_dock() {
 
 sudo -v 
 
-if [ "$CURRENT_THEME" -eq 0 ]; then
-    if [ $1 == "force" ]; then
-        RANDOM_COLOR=$2
-    else
-        RANDOM_COLOR=$(pick_random_color)
-    fi
-    HEART_EMOJI=$(get_heart_for_color "$RANDOM_COLOR")
-    WALLPAPER_PATH=$(get_wallpaper_path "$RANDOM_COLOR")
+switch_to_sabrina() {
+    COLOR=$1
+    echo "Using $COLOR"
+
+    HEART_EMOJI=$(get_heart_for_color "$COLOR")
+    WALLPAPER_PATH=$(get_wallpaper_path "$COLOR")
     echo "[$HEART_EMOJI] That's that me espresso..."
 
     play_sound "$SOUND_NORMAL"
     
     osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to false'
     [ -n "$WALLPAPER_PATH" ] && change_wallpaper "$WALLPAPER_PATH"
-    swap_icons "Sabrina/$RANDOM_COLOR"
+    swap_icons "Sabrina/$COLOR"
     setup_dock
-    set_data_state 1 "$RANDOM_COLOR"
-    apply_theme_widgets "$RANDOM_COLOR"
+    set_data_state 1 "$COLOR"
+    apply_theme_widgets "$COLOR"
+}
 
-else
+switch_to_normal() {
     WALLPAPER_PATH=$(get_wallpaper_path "normal")
     echo "[🖤] Retour vers le mode NORMAL..."
 
@@ -275,7 +274,20 @@ else
     setup_dock
     set_data_state 0 ""
     apply_theme_widgets "normal"
+}
 
+if [ $1 == "force" ]; then
+    if [ $2 != "normal" ]; then
+        switch_to_sabrina "$2"
+    else
+        switch_to_normal
+    fi
+else
+    if [ "$CURRENT_THEME" -eq 0 ]; then
+        RANDOM_COLOR=$(pick_random_color)
+    else
+        switch_to_normal
+    fi
 fi
 
 sudo rm -rfv /Library/Caches/com.apple.iconservices.store >/dev/null 2>&1
