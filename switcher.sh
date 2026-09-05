@@ -2,7 +2,8 @@
 
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-data="data.json"
+REPO_FOLDER="$HOME/Dev/Switcher"
+data="$REPO_FOLDER/data.json"
 
 BASE_WP="$HOME/Pictures/SWITCH/WP"
 BASE_ICONS="$HOME/Pictures/SWITCH/ICNS"
