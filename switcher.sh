@@ -2,11 +2,11 @@
 
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-data="/Users/matheo/Dev/data.json"
+data="data.json"
 
-BASE_WP="/Users/matheo/Pictures/SWITCH/WP"
-BASE_ICONS="/Users/matheo/Pictures/SWITCH/ICNS"
-BASE_SOUNDS="/Users/matheo/Pictures/SWITCH/SOUNDS"
+BASE_WP="$HOME/Pictures/SWITCH/WP"
+BASE_ICONS="$HOME/Pictures/SWITCH/ICNS"
+BASE_SOUNDS="$HOME/Pictures/SWITCH/SOUNDS"
 BASE_WIDGET="$HOME/Pictures/SWITCH/WIDGET"
 
 SOUND_SABRINA="$BASE_SOUNDS/sabrina.mp3"
