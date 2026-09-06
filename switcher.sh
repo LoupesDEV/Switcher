@@ -195,7 +195,15 @@ swap_icons() {
     local max_jobs=6
     
     for app_name in "${APPS_TO_ICON_SWITCH[@]}"; do
-        app_path=$(mdfind "kMDItemCFBundleIdentifier == * && kMDItemFSName == '${app_name}.app'" | head -n 1)
+        if [ -d "/Applications/${app_name}.app" ]; then
+            app_path="/Applications/${app_name}.app"
+        elif [ -d "/System/Applications/${app_name}.app" ]; then
+            app_path="/System/Applications/${app_name}.app"
+        elif [ -d "/Applications/Utilities/${app_name}.app" ]; then
+            app_path="/Applications/Utilities/${app_name}.app"
+        else
+            app_path=$(mdfind "kMDItemFSName == '${app_name}.app'" | head -n 1)
+        fi
 
         if [ ! -d "$app_path" ]; then
             echo "⚠️  App introuvable : $app_name"
