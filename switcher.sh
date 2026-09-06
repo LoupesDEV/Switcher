@@ -288,9 +288,7 @@ fi
 sudo rm -rfv /Library/Caches/com.apple.iconservices.store >/dev/null 2>&1
 sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \; >/dev/null 2>&1
 
-pkill -f "Übersicht"
-sleep 0.5
-open "/Applications/Übersicht.app"
+osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
 
 killall Finder
 # killall Terminal
