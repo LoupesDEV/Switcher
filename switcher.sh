@@ -290,8 +290,7 @@ else
     fi
 fi
 
-sudo rm -rfv /Library/Caches/com.apple.iconservices.store >/dev/null 2>&1
-sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \; >/dev/null 2>&1
+killall iconservicesagent iconservicesd 2>/dev/null || true
 
 osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
 
