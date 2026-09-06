@@ -1,6 +1,6 @@
 {
   "theme": 1,
-  "last_color": 0,
+  "last_color": 5,
   "colors": [
     "red",
     "green",
@@ -71,7 +71,7 @@
       "normal": "{\"top\": \"62%\", \"left\": \"49.7%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto3\"}",
       "red": "{\"top\":\"6.50%\",\"left\":\"21.39%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto3\"}",
       "green": "{\"top\":\"15.06%\",\"left\":\"24.33%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto3\"}",
-      "blue": "{\"top\":\"28.23%\",\"left\":\"51.67%\",\"width\":\"300px\",\"folder\":\"WidgetPhoto3\"}",
+      "blue": "{\"top\":\"29.94%\",\"left\":\"51.67%\",\"width\":\"300px\",\"folder\":\"WidgetPhoto3\"}",
       "pink": "{\"top\":\"43.63%\",\"left\":\"15.83%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto3\"}",
       "yellow": "{\"top\":\"11.04%\",\"left\":\"20.94%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto3\"}",
       "purple": "{\"top\":\"5.22%\",\"left\":\"43.67%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto3\"}"
@@ -80,7 +80,7 @@
       "normal": "{\"top\": \"39%\", \"left\": \"48%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto4\"}",
       "red": "{\"top\":\"60.74%\",\"left\":\"29.44%\",\"width\":\"260px\",\"folder\":\"WidgetPhoto4\"}",
       "green": "{\"top\":\"55.95%\",\"left\":\"27.78%\",\"width\":\"220px\",\"folder\":\"WidgetPhoto4\"}",
-      "blue": "{\"top\":\"47.05%\",\"left\":\"39.44%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto4\"}",
+      "blue": "{\"top\":\"47.73%\",\"left\":\"39.44%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto4\"}",
       "pink": "{\"top\":\"62.96%\",\"left\":\"25.83%\",\"width\":\"220px\",\"folder\":\"WidgetPhoto4\"}",
       "yellow": "{\"top\":\"51.41%\",\"left\":\"24.06%\",\"width\":\"220px\",\"folder\":\"WidgetPhoto4\"}",
       "purple": "{\"top\":\"9.67%\",\"left\":\"55.83%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto4\"}"
@@ -98,14 +98,14 @@
       "normal": "{\"top\": \"45%\", \"left\": \"78.5%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto6\"}",
       "red": "{\"top\":\"5.90%\",\"left\":\"33.06%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto6\"}",
       "green": "{\"top\":\"13.69%\",\"left\":\"35.83%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto6\"}",
-      "blue": "{\"top\":\"38.07%\",\"left\":\"69.17%\",\"width\":\"230px\",\"folder\":\"WidgetPhoto6\"}",
+      "blue": "{\"top\":\"39.01%\",\"left\":\"69.17%\",\"width\":\"230px\",\"folder\":\"WidgetPhoto6\"}",
       "pink": "{\"top\":\"4.36%\",\"left\":\"35.83%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto6\"}",
       "yellow": "{\"top\":\"36.78%\",\"left\":\"52.22%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto6\"}",
       "purple": "{\"top\":\"16.85%\",\"left\":\"80.44%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto6\"}"
     },
     "Photo7": {
       "normal": "{\"top\": \"18%\", \"left\": \"62.5%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto7\"}",
-      "blue": "{\"top\":\"41.92%\",\"left\":\"27.00%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto7\"}",
+      "blue": "{\"top\":\"43.03%\",\"left\":\"27.00%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto7\"}",
       "pink": "{\"top\":\"8.98%\",\"left\":\"47.78%\",\"width\":\"240px\",\"folder\":\"WidgetPhoto7\"}",
       "green": "{\"top\":\"17.96%\",\"left\":\"47.78%\",\"width\":\"240px\",\"folder\":\"WidgetPhoto7\"}",
       "red": "{\"top\":\"17.37%\",\"left\":\"45.00%\",\"width\":\"240px\",\"folder\":\"WidgetPhoto7\"}",
@@ -123,7 +123,7 @@
     },
     "Photo9": {
       "normal": "{\"top\": \"65.5%\", \"left\": \"33.5%\", \"width\": \"280px\", \"folder\": \"WidgetPhoto9\"}",
-      "blue": "{\"top\":\"44.05%\",\"left\":\"17.22%\",\"width\":\"150px\",\"folder\":\"WidgetPhoto9\"}",
+      "blue": "{\"top\":\"45.17%\",\"left\":\"17.22%\",\"width\":\"150px\",\"folder\":\"WidgetPhoto9\"}",
       "pink": "{\"top\":\"61.42%\",\"left\":\"39.11%\",\"width\":\"380px\",\"folder\":\"WidgetPhoto9\"}",
       "green": "{\"top\":\"60.99%\",\"left\":\"17.22%\",\"width\":\"180px\",\"folder\":\"WidgetPhoto9\"}",
       "red": "{\"top\":\"47.05%\",\"left\":\"11.11%\",\"width\":\"300px\",\"folder\":\"WidgetPhoto9\"}",
@@ -258,7 +258,7 @@
     },
     "Year": {
       "normal": "{\"theme\": \"normal\", \"top\": \"41%\", \"left\": \"79%\", \"width\": \"180px\", \"color\": \"#2C2C2C\"}",
-      "blue": "{\"theme\":\"sabrina\",\"top\":\"73.57%\",\"left\":\"8.28%\",\"width\":\"120px\",\"color\":\"#1A3A5E\"}",
+      "blue": "{\"theme\":\"sabrina\",\"top\":\"75.88%\",\"left\":\"8.28%\",\"width\":\"120px\",\"color\":\"#1A3A5E\"}",
       "pink": "{\"theme\":\"sabrina\",\"top\":\"3.68%\",\"left\":\"75.78%\",\"width\":\"120px\",\"color\":\"#8A3D68\"}",
       "green": "{\"theme\":\"sabrina\",\"top\":\"49.19%\",\"left\":\"16.67%\",\"width\":\"120px\",\"color\":\"#2D4F3E\"}",
       "red": "{\"theme\":\"sabrina\",\"top\":\"78.44%\",\"left\":\"21.67%\",\"width\":\"120px\",\"color\":\"#912F2F\"}",
@@ -276,7 +276,7 @@
     },
     "Record": {
       "normal": "{\"theme\": \"normal\", \"top\": \"66%\", \"left\": \"22.8%\", \"width\": \"150px\", \"height\": \"200px\", \"bgcolor\": \"#ffffff\", \"textColor\": \"#000000\", \"subColor\": \"#888888\", \"radius\": \"30px\", \"shadow\": \"0 10px 40px rgba(0,0,0,0.1)\"}",
-      "blue": "{\"theme\":\"sabrina\",\"top\":\"39.35%\",\"left\":\"83.89%\",\"width\":\"150px\",\"height\":\"210px\",\"bgcolor\":\"rgba(44, 62, 80, 0.7)\",\"border\":\"6px solid #A0D2EB\",\"rotate\":\"3deg\"}",
+      "blue": "{\"theme\":\"sabrina\",\"top\":\"40.80%\",\"left\":\"83.89%\",\"width\":\"150px\",\"height\":\"210px\",\"bgcolor\":\"rgba(44, 62, 80, 0.7)\",\"border\":\"6px solid #A0D2EB\",\"rotate\":\"3deg\"}",
       "pink": "{\"theme\":\"sabrina\",\"top\":\"44.48%\",\"left\":\"3.00%\",\"width\":\"175px\",\"height\":\"225px\",\"bgcolor\":\"rgba(138, 61, 104, 0.72)\",\"border\":\"6px solid #E5B5D0\",\"rotate\":\"-3deg\"}",
       "green": "{\"theme\":\"sabrina\",\"top\":\"50.47%\",\"left\":\"4.17%\",\"width\":\"175px\",\"height\":\"225px\",\"bgcolor\":\"rgba(45, 79, 62, 0.72)\",\"border\":\"6px solid #B2D8C5\",\"rotate\":\"-3deg\"}",
       "red": "{\"theme\":\"sabrina\",\"top\":\"44.48%\",\"left\":\"46.11%\",\"width\":\"175px\",\"height\":\"225px\",\"bgcolor\":\"rgba(145, 47, 47, 0.72)\",\"border\":\"6px solid #F2C6C6\",\"rotate\":\"3deg\"}",
