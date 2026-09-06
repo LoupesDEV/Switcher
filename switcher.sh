@@ -285,6 +285,7 @@ if [[ "${1:-}" == "force" ]]; then
 else
     if [ "$CURRENT_THEME" -eq 0 ]; then
         RANDOM_COLOR=$(pick_random_color)
+        switch_to_sabrina "$RANDOM_COLOR"
     else
         switch_to_normal
     fi
