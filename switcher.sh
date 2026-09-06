@@ -13,7 +13,7 @@ BASE_WIDGET="$HOME/Pictures/SWITCH/WIDGET"
 SOUND_SABRINA="$BASE_SOUNDS/sabrina.mp3"
 SOUND_NORMAL="$BASE_SOUNDS/normal.mp3"
 
-NB_WIDGETS=18
+NB_WIDGETS_PHOTO=18
 CURRENT_THEME=$(jq -r '.theme // 1' "$data")
 
 APPS_TO_ICON_SWITCH=("LidAngleSensor" "Open WebUI" "VLC" "Ollama" "Xcode" "osu!" "XQuartz" "Pages" "Numbers" "Keynote" "Gifski" "flipclock" "Android Studio" "Firefox" "Comet" "Visual Studio Code" "WhatsApp" "Spotify" "Discord" "VinylPod" "GIMP" "Steam" "Microsoft Excel" "Microsoft PowerPoint" "Microsoft Word" "Lunar Client" "JetBrains Toolbox" "Rider" "Telegram" "BlueStacks" "BlueStacksMIM" "Emacs" "Google Chrome" "Google Docs" "Google Drive" "Google Sheets" "Google Slides" "GPG Keychain" "HypeRCON" "Minecraft" "OBS" "TV Time" "Shop" "PopSQL" "WebStorm" "CLion" "Notion Calendar" "Studio" "Übersicht" "NordVPN" "Anytype" "Inkscape")
@@ -97,17 +97,14 @@ get_heart_for_color() {
 }
 
 set_data_state() {
-        local new_theme="$1"
-        local selected_color="$2"
+    local new_theme="$1"
+    local selected_color="$2"
 
-        if [ -n "$selected_color" ]; then
-                jq --argjson theme "$new_theme" --arg color "$selected_color" '
-                    .theme = $theme
-                    | .last_color = ((.colors // []) | index($color) // 0)
-                ' "$data" > "${data}.tmp" && mv "${data}.tmp" "$data"
-        else
-                jq --argjson theme "$new_theme" '.theme = $theme' "$data" > "${data}.tmp" && mv "${data}.tmp" "$data"
-        fi
+    if [ -n "$selected_color" ]; then
+        jq --argjson theme "$new_theme" --arg color "$selected_color" '.theme = $theme | .last_color = ((.colors // []) | index($color) // 0)' "$data" > "${data}.tmp" && mv "${data}.tmp" "$data"
+    else
+        jq --argjson theme "$new_theme" '.theme = $theme' "$data" > "${data}.tmp" && mv "${data}.tmp" "$data"
+    fi
 }
 
 apply_theme_widgets() {
@@ -123,7 +120,7 @@ apply_theme_widgets() {
             [ -n "$widget_json" ] && set_widget_state "Widget${widget_name}" "$widget_json" ""
     done
 
-    for i in $(seq 1 "$NB_WIDGETS"); do
+    for i in $(seq 1 "$NB_WIDGETS_PHOTO"); do
             widget_json=$(get_widget_config "Photo$i" "$variant")
 
             if [ "$variant" = "normal" ]; then
@@ -193,6 +190,8 @@ swap_icons() {
     local theme_subfolder="$1"
     local source_folder="$BASE_ICONS/$theme_subfolder"
     local max_jobs=6
+    local app_path
+    local icon_path
     
     for app_name in "${APPS_TO_ICON_SWITCH[@]}"; do
         if [ -d "/Applications/${app_name}.app" ]; then
@@ -246,17 +245,15 @@ setup_dock() {
     dockutil --add "/Applications/Visual Studio Code.app" --no-restart >/dev/null 2>&1
     dockutil --add "/Applications/WhatsApp.app/" --no-restart >/dev/null 2>&1
     dockutil --add "/Applications/Spotify.app" --no-restart >/dev/null 2>&1
-    
-    killall Dock
 }
 
 sudo -v 
 
 switch_to_sabrina() {
-    COLOR=$1
+    local COLOR=$1
 
-    HEART_EMOJI=$(get_heart_for_color "$COLOR")
-    WALLPAPER_PATH=$(get_wallpaper_path "$COLOR")
+    local HEART_EMOJI=$(get_heart_for_color "$COLOR")
+    local WALLPAPER_PATH=$(get_wallpaper_path "$COLOR")
     echo "[$HEART_EMOJI] That's that me espresso..."
 
     play_sound "$SOUND_NORMAL"
@@ -270,7 +267,7 @@ switch_to_sabrina() {
 }
 
 switch_to_normal() {
-    WALLPAPER_PATH=$(get_wallpaper_path "normal")
+    local WALLPAPER_PATH=$(get_wallpaper_path "normal")
     echo "[🖤] Retour vers le mode NORMAL..."
 
     play_sound "$SOUND_NORMAL"
@@ -299,8 +296,7 @@ else
 fi
 
 killall iconservicesagent iconservicesd 2>/dev/null || true
-
+killall iconservicesagent iconservicesd Dock Finder 2>/dev/null || true
 osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
 
 killall Finder
-# killall Terminal
