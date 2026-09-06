@@ -192,7 +192,7 @@ change_terminal_theme() {
 swap_icons() {
     local theme_subfolder="$1"
     local source_folder="$BASE_ICONS/$theme_subfolder"
-    local -a pids=()
+    local max_jobs=6
     
     for app_name in "${APPS_TO_ICON_SWITCH[@]}"; do
         app_path=$(mdfind "kMDItemCFBundleIdentifier == * && kMDItemFSName == '${app_name}.app'" | head -n 1)
@@ -215,13 +215,18 @@ swap_icons() {
             continue
         fi
 
-        { sudo fileicon rm "$app_path" -q 2>/dev/null
-          sudo fileicon set "$app_path" "$icon_path" -q 2>/dev/null
-          sudo touch "$app_path"; } &
-        pids+=($!)
+        while [ "$(jobs -rp | wc -l)" -ge "$max_jobs" ]; do
+            wait -n 2>/dev/null || sleep 0.1
+        done
+
+        {
+            sudo fileicon rm "$app_path" -q 2>/dev/null
+            sudo fileicon set "$app_path" "$icon_path" -q 2>/dev/null
+            sudo touch "$app_path"
+        } &
     done
 
-    wait "${pids[@]}" 2>/dev/null
+    wait
 }
 
 setup_dock() {
