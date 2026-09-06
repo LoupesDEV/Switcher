@@ -276,8 +276,8 @@ switch_to_normal() {
     apply_theme_widgets "normal"
 }
 
-if [ $1 == "force" ]; then
-    if [ $2 != "normal" ]; then
+if [[ "${1:-}" == "force" ]]; then
+    if [[ "${2:-}" != "normal" ]]; then
         switch_to_sabrina "$2"
     else
         switch_to_normal
