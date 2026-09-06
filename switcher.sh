@@ -195,13 +195,7 @@ swap_icons() {
     local -a pids=()
     
     for app_name in "${APPS_TO_ICON_SWITCH[@]}"; do
-        if [ "$app_name" == "Studio" ]; then
-            app_path="/Applications/Studio 2.0/Studio.app"
-        elif [ "$app_name" == "XQuartz" ]; then
-            app_path="/Applications/Utilities/XQuartz.app"
-        else
-            app_path="/Applications/${app_name}.app"
-        fi
+        app_path=$(mdfind "kMDItemCFBundleIdentifier == * && kMDItemFSName == '${app_name}.app'" | head -n 1)
 
         if [ ! -d "$app_path" ]; then
             echo "⚠️  App introuvable : $app_name"
