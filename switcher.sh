@@ -10,7 +10,7 @@ BASE_ICONS="$HOME/Pictures/SWITCH/ICNS"
 BASE_SOUNDS="$HOME/Pictures/SWITCH/SOUNDS"
 BASE_WIDGET="$HOME/Pictures/SWITCH/WIDGET"
 
-SOUND_SABRINA="$BASE_SOUNDS/sabrina.mp3"
+SOUND_COLORS="$BASE_SOUNDS/colors.mp3"
 SOUND_NORMAL="$BASE_SOUNDS/normal.mp3"
 
 NB_WIDGETS_PHOTO=18
@@ -127,8 +127,8 @@ apply_theme_widgets() {
                     img="$BASE_WIDGET/$i/normal.png"
                     [ ! -f "$img" ] && img="$BASE_WIDGET/$i/normal.gif"
             else
-                    img="$BASE_WIDGET/$i/sabrina/${variant}.png"
-                    [ ! -f "$img" ] && img="$BASE_WIDGET/$i/sabrina/${variant}.gif"
+                    img="$BASE_WIDGET/$i/colors/${variant}.png"
+                    [ ! -f "$img" ] && img="$BASE_WIDGET/$i/colors/${variant}.gif"
             fi
 
             [ -n "$widget_json" ] && set_widget_state "WidgetPhoto$i" "$widget_json" "$img"
@@ -240,7 +240,6 @@ setup_dock() {
     dockutil --remove all --no-restart
 
     dockutil --add "/System/Applications/Utilities/Terminal.app/" --no-restart >/dev/null 2>&1
-    dockutil --add "/Applications/Anytype.app" --no-restart >/dev/null 2>&1
     dockutil --add "/Applications/Safari.app" --no-restart >/dev/null 2>&1
     dockutil --add "/Applications/Visual Studio Code.app" --no-restart >/dev/null 2>&1
     dockutil --add "/Applications/WhatsApp.app/" --no-restart >/dev/null 2>&1
@@ -249,18 +248,23 @@ setup_dock() {
 
 sudo -v 
 
-switch_to_sabrina() {
+lower_to_uppercase() {
+    local input="$1"
+    echo "$input" | tr '[:lower:]' '[:upper:]'
+}
+
+switch_to_colors() {
     local COLOR=$1
 
     local HEART_EMOJI=$(get_heart_for_color "$COLOR")
     local WALLPAPER_PATH=$(get_wallpaper_path "$COLOR")
-    echo "[$HEART_EMOJI] That's that me espresso..."
+    echo "[$HEART_EMOJI] Passage vers la couleur $(lower_to_uppercase "$COLOR")..."
 
     play_sound "$SOUND_NORMAL"
     
     osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to false'
     [ -n "$WALLPAPER_PATH" ] && change_wallpaper "$WALLPAPER_PATH"
-    swap_icons "Sabrina/$COLOR"
+    swap_icons "Colors/$COLOR"
     setup_dock
     set_data_state 1 "$COLOR"
     apply_theme_widgets "$COLOR"
@@ -282,14 +286,14 @@ switch_to_normal() {
 
 if [[ "${1:-}" == "force" ]]; then
     if [[ "${2:-}" != "normal" ]]; then
-        switch_to_sabrina "$2"
+        switch_to_colors "$2"
     else
         switch_to_normal
     fi
 else
     if [ "$CURRENT_THEME" -eq 0 ]; then
         RANDOM_COLOR=$(pick_random_color)
-        switch_to_sabrina "$RANDOM_COLOR"
+        switch_to_colors "$RANDOM_COLOR"
     else
         switch_to_normal
     fi
