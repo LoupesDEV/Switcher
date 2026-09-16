@@ -80,28 +80,27 @@ Pour mettre en place et utiliser le script, suivez ces étapes :
    ./switcher.sh
    ```
 
-> 💡 *Commandes avancées : Vous pouvez forcer un mode précis en passant des arguments. Par exemple, `./switcher.sh force normal` appliquera le thème par défaut, et `./switcher.sh force red` appliquera la variante rouge du thème.*
+> 💡 *Commandes avancées : Vous pouvez forcer un mode précis en passant des arguments. Par exemple, `./switcher.sh force normal` appliquera le thème par défaut, et `./switcher.sh force red` appliquera la variante rouge du thème de couleur.*
 
 # Fonctionnalités
 
 ### 🎨 Thèmes Dynamiques & Variantes
 - **Mode "Normal"** : Thème minimaliste, couleurs sombres (`#2C2C2C`), interface épurée.
-- **Thèmes Artiste (Sabrina Carpenter)** : Un thème complet avec 6 variantes de couleurs (Bleu, Rose, Vert, Rouge, Jaune, Violet), modifiant l'intégralité du bureau avec un design "Short n' Sweet".
+- **Thèmes Couleur** : Un thème complet avec 6 variantes de couleurs (Bleu, Rose, Vert, Rouge, Jaune, Violet), modifiant l'intégralité du bureau.
 - **Sélection aléatoire intelligente** : Le script évite de retomber sur la même couleur deux fois de suite grâce à l'enregistrement du dernier état dans `data.json`.
 
 ### 📱 Remplacement d'Icônes & Dock
 - **Changement d'icônes à la volée** : Remplace les icônes de plus de 50 applications (VS Code, Spotify, Discord, JetBrains, etc.) via `fileicon`.
 - **Exécution parallèle optimisée** : Utilise un pool de jobs (max 6 processus) pour appliquer les icônes sans saturer les I/O du Mac.
-- **Dock sur mesure** : Nettoie le Dock et épingle uniquement les applications essentielles selon le thème grâce à `dockutil`.
+- **Dock sur mesure** : Nettoie le Dock et épingle uniquement les applications essentielles grâce à `dockutil`.
 
 ### 🧩 Widgets Übersicht Avancés
-- **Coordonnées dynamiques** : Redimensionne et déplace 18+ widgets (photos, horloge, lecteur musical, paroles) en modifiant les fichiers `layout.json` de chaque widget.
+- **Coordonnées dynamiques** : Redimensionne et déplace 20+ widgets (photos, horloge, lecteur musical, paroles) en modifiant les fichiers `layout.json` de chaque widget.
 - **Rafraîchissement automatique** : Relance Übersicht via AppleScript pour appliquer les changements sans délai.
 
 ### ⚙️ Intégration Système
-- **Fonds d'écran** : Changement simultané sur tous les espaces de travail actifs.
-- **Apparence macOS** : Bascule automatique entre le Dark Mode et le Light Mode selon le thème actif.
-- **Effets sonores** : Lecture en arrière-plan d'un fichier audio (ex: `sabrina.mp3`) lors de la transition.
+- **Fonds d'écran** : Changement simultané sur tous les espaces de travail *actifs*.
+- **Effets sonores** : Lecture en arrière-plan d'un fichier audio (ex: `switch.mp3`) lors de la transition.
 - **Nettoyage du cache** : Purge des démons `iconservicesagent` pour forcer l'affichage immédiat des nouvelles icônes.
 
 # Guide de configuration
@@ -118,7 +117,7 @@ Toute l'interface est paramétrée depuis le fichier `data.json`. Voici comment 
   "colors": ["red", "green", "blue", "pink", "yellow", "purple"],
   "wallpaper": {
     "normal": "normal.jpg",
-    "blue": "sabrina/blue.png"
+    "blue": "colors/blue.png"
   },
   "palettes": {
     "blue": {
@@ -149,19 +148,19 @@ Vous pouvez trouver tout mes widgets dans le dossier `docs/widgets`, vous pouvez
 
 Pour modifier l'icône d'une nouvelle app :
 1. Ajoutez le nom exact de l'application dans le tableau `APPS_TO_ICON_SWITCH` au début du script `.sh`.
-2. Placez l'image correspondante (`NomDeLApp.png` ou `.icns`) dans vos sous-dossiers `ICNS/Normal` et `ICNS/Sabrina/...`.
+2. Placez l'image correspondante (`NomDeLApp.png` ou `.icns`) dans vos sous-dossiers `ICNS/Normal` et `ICNS/Colors/...`.
 
 # Démo
 
 <div align="center">
     <table>
         <tr>
-            <td><img src="docs/demo/normal.png" alt="Mode Normal Minimaliste"/></td>
-            <td><img src="docs/demo/blue.png" alt="Mode Sabrina Bleu"/></td>
+            <td><img src="docs/demo/normal.png" alt="Mode Normal"/></td>
+            <td><img src="docs/demo/blue.png" alt="Mode Colors Bleu"/></td>
         </tr>
         <tr>
-            <td><img src="docs/demo/red.png" alt="Mode Sabrina Rose"/></td>
-            <td><img src="docs/demo/purple.png" alt="Mode Sabrina Violet"/></td>
+            <td><img src="docs/demo/red.png" alt="Mode Colors Rose"/></td>
+            <td><img src="docs/demo/purple.png" alt="Mode Colors Violet"/></td>
         </tr>
     </table>
 </div>
@@ -181,21 +180,20 @@ Switcher/
 ~/Pictures/SWITCH/            # Dossier externe (à créer manuellement)
 ├── WP/                       # Fonds d'écran
 │   ├── normal.jpg
-│   └── sabrina/
+│   └── colors/
 │       └── blue.png
 ├── ICNS/                     # Icônes de remplacement
 │   ├── Normal/
 │   │   └── Spotify.png
-│   └── Sabrina/
+│   └── Colors/
 │       └── blue/
 │           └── Spotify.png
-├── SOUNDS/                   # Effets sonores
-│   ├── normal.mp3
-│   └── sabrina.mp3
+├── SOUNDS/                   # Effet sonore
+│   └── switch.mp3
 └── WIDGET/                   # Ressources pour les widgets Photo Übersicht
     ├── 1/
     │   ├── normal.png
-    │   └── sabrina/
+    │   └── colors/
     │       └── blue.png
     └── ...
 ```
@@ -235,9 +233,6 @@ R : Assurez-vous que le chemin `$HOME/Library/Application Support/Übersicht/wid
 
 **Q : Comment revenir aux icônes d'origine de macOS ?**  
 R : Vous pouvez lancer `sudo fileicon rm /Chemin/Vers/App.app` pour purger l'icône modifiée et restaurer celle incluse dans le bundle de l'application.
-
-**Q : Je ne suis pas fan de Sabrina Carpenter, est ce que je peux changer le nom ?**  
-R : C'est une manipulation un peu plus longue et pas native dans se script, mais il vous faudrat remplacer toutes les `Sabrina` **ET** `sabrina` par ce que vous voulez (pareil pour les dossiers).
 
 # Contributeurs
 
