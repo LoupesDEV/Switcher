@@ -21,7 +21,7 @@ export const render = ({output}) => {
   const percentRaw = (now - start) / (end - start) * 100;
   const percent = percentRaw.toFixed(1);
 
-  if (config.theme !== 'sabrina') {
+  if (config.theme !== 'colors') {
     const containerStyle = {
         position: 'absolute',
         top: config.top, bottom: config.bottom, left: config.left, right: config.right,

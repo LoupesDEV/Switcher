@@ -14,14 +14,14 @@ export const render = ({output}) => {
   let config;
   try { config = JSON.parse(output); } catch(e) { return null; }
 
-  if (config.theme !== 'sabrina') {
+  if (config.theme !== 'colors') {
       return null;
   }
 
   const today = new Date();
   const dateStr = today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }).toUpperCase();
 
-  if (config.theme === 'sabrina') {
+  if (config.theme === 'colors') {
       const ticketStyle = {
         position: 'absolute',
         top: config.top, bottom: config.bottom, left: config.left, right: config.right,

@@ -14,7 +14,7 @@ export const render = ({output}) => {
   let config;
   try { config = JSON.parse(output); } catch(e) { return null; }
 
-  const isPlatinum = config.theme === 'sabrina';
+  const isPlatinum = config.theme === 'colors';
   
   const frameWidth = parseInt(config.width) || 150;
   const discSize = frameWidth * (isPlatinum ? 0.7 : 0.65); 

@@ -26,11 +26,11 @@ export const render = ({output}) => {
   let config;
   try { config = JSON.parse(output); } catch(e) { return null; }
 
-  if (config.theme !== 'sabrina') {
+  if (config.theme !== 'colors') {
       return null;
   }
 
-  const list = config.theme === 'sabrina' ? LYRICS_SABRINA : QUOTES_NORMAL;
+  const list = config.theme === 'colors' ? LYRICS_SABRINA : QUOTES_NORMAL;
   const index = Math.floor(Date.now() / 60000) % list.length;
   const text = list[index];
 
