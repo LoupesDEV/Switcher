@@ -264,10 +264,10 @@ switch_to_colors() {
     
     osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to false'
     [ -n "$WALLPAPER_PATH" ] && change_wallpaper "$WALLPAPER_PATH"
-    swap_icons "Colors/$COLOR"
     setup_dock
     set_data_state 1 "$COLOR"
     apply_theme_widgets "$COLOR"
+    swap_icons "Colors/$COLOR"
 }
 
 switch_to_normal() {
@@ -278,10 +278,10 @@ switch_to_normal() {
     
     osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to false'
     [ -n "$WALLPAPER_PATH" ] && change_wallpaper "$WALLPAPER_PATH"
-    swap_icons "Normal"
     setup_dock
     set_data_state 0 ""
     apply_theme_widgets "normal"
+    swap_icons "Normal"
 }
 
 if [[ "${1:-}" == "force" ]]; then
