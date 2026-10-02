@@ -44,7 +44,7 @@ export const render = ({output, error}) => {
         {`@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&display=swap');`}
       </style>
       
-      <div style={textStyle}>SABRINA<br/>CARPENTER</div>
+      <div style={textStyle}>{config.textTop}<br/>{config.textBottom}</div>
     </div>
   );
 };

@@ -50,7 +50,7 @@
   },
   "widgets": {
     "Photo1": {
-      "normal": "{\"top\": \"23%\",  \"left\": \"45%\", \"width\": \"300px\", \"folder\": \"WidgetPhoto1\"}",
+      "normal": "{\"top\": \"23%\",  \"left\": \"45%\",\"width\": \"300px\",\"folder\": \"WidgetPhoto1\"}",
       "red": "{\"top\":\"17.11%\",\"left\":\"5.56%\",\"width\":\"275px\",\"folder\":\"WidgetPhoto1\"}",
       "green": "{\"top\":\"16.51%\",\"left\":\"8.33%\",\"width\":\"275px\",\"folder\":\"WidgetPhoto1\"}",
       "blue": "{\"top\":\"11.98%\",\"left\":\"70.00%\",\"width\":\"400px\",\"folder\":\"WidgetPhoto1\"}",
@@ -59,7 +59,7 @@
       "purple": "{\"top\":\"57.40%\",\"left\":\"56.06%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto1\"}"
     },
     "Photo2": {
-      "normal": "{\"top\": \"41%\", \"left\": \"64.2%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto2\"}",
+      "normal": "{\"top\": \"41%\",\"left\": \"64.2%\",\"width\": \"250px\",\"folder\": \"WidgetPhoto2\"}",
       "red": "{\"top\":\"28.23%\",\"left\":\"33.28%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto2\"}",
       "green": "{\"top\":\"35.93%\",\"left\":\"36.06%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto2\"}",
       "blue": "{\"top\":\"24.81%\",\"left\":\"39.50%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto2\"}",
@@ -68,7 +68,7 @@
       "purple": "{\"top\":\"78.79%\",\"left\":\"56.22%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto2\"}"
     },
     "Photo3": {
-      "normal": "{\"top\": \"62%\", \"left\": \"49.7%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto3\"}",
+      "normal": "{\"top\": \"62%\",\"left\": \"49.7%\",\"width\": \"250px\",\"folder\": \"WidgetPhoto3\"}",
       "red": "{\"top\":\"6.50%\",\"left\":\"21.39%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto3\"}",
       "green": "{\"top\":\"15.06%\",\"left\":\"24.33%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto3\"}",
       "blue": "{\"top\":\"29.94%\",\"left\":\"51.67%\",\"width\":\"300px\",\"folder\":\"WidgetPhoto3\"}",
@@ -77,7 +77,7 @@
       "purple": "{\"top\":\"5.22%\",\"left\":\"43.67%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto3\"}"
     },
     "Photo4": {
-      "normal": "{\"top\": \"39%\", \"left\": \"48%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto4\"}",
+      "normal": "{\"top\": \"39%\",\"left\": \"48%\",\"width\": \"250px\",\"folder\": \"WidgetPhoto4\"}",
       "red": "{\"top\":\"60.74%\",\"left\":\"29.44%\",\"width\":\"260px\",\"folder\":\"WidgetPhoto4\"}",
       "green": "{\"top\":\"55.95%\",\"left\":\"27.78%\",\"width\":\"220px\",\"folder\":\"WidgetPhoto4\"}",
       "blue": "{\"top\":\"47.73%\",\"left\":\"39.44%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto4\"}",
@@ -86,7 +86,7 @@
       "purple": "{\"top\":\"9.67%\",\"left\":\"55.83%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto4\"}"
     },
     "Photo5": {
-      "normal": "{\"top\": \"39%\",  \"left\": \"33%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto5\"}",
+      "normal": "{\"top\": \"39%\",  \"left\": \"33%\",\"width\": \"250px\",\"folder\": \"WidgetPhoto5\"}",
       "red": "{\"top\":\"24.81%\",\"left\":\"21.39%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto5\"}",
       "green": "{\"top\":\"33.36%\",\"left\":\"24.17%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto5\"}",
       "blue": "{\"top\":\"26.52%\",\"left\":\"17.78%\",\"width\":\"148px\",\"folder\":\"WidgetPhoto5\"}",
@@ -95,7 +95,7 @@
       "purple": "{\"top\":\"13.69%\",\"left\":\"68.28%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto5\"}"
     },
     "Photo6": {
-      "normal": "{\"top\": \"45%\", \"left\": \"78.5%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto6\"}",
+      "normal": "{\"top\": \"45%\",\"left\": \"78.5%\",\"width\": \"250px\",\"folder\": \"WidgetPhoto6\"}",
       "red": "{\"top\":\"5.90%\",\"left\":\"33.06%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto6\"}",
       "green": "{\"top\":\"13.69%\",\"left\":\"35.83%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto6\"}",
       "blue": "{\"top\":\"39.01%\",\"left\":\"69.17%\",\"width\":\"230px\",\"folder\":\"WidgetPhoto6\"}",
@@ -104,7 +104,7 @@
       "purple": "{\"top\":\"16.85%\",\"left\":\"80.44%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto6\"}"
     },
     "Photo7": {
-      "normal": "{\"top\": \"18%\", \"left\": \"62.5%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto7\"}",
+      "normal": "{\"top\": \"18%\",\"left\": \"62.5%\",\"width\": \"250px\",\"folder\": \"WidgetPhoto7\"}",
       "blue": "{\"top\":\"43.03%\",\"left\":\"27.00%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto7\"}",
       "pink": "{\"top\":\"8.98%\",\"left\":\"47.78%\",\"width\":\"240px\",\"folder\":\"WidgetPhoto7\"}",
       "green": "{\"top\":\"17.96%\",\"left\":\"47.78%\",\"width\":\"240px\",\"folder\":\"WidgetPhoto7\"}",
@@ -113,7 +113,7 @@
       "purple": "{\"top\":\"43.28%\",\"left\":\"11.67%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto7\"}"
     },
     "Photo8": {
-      "normal": "{\"top\": \"42%\", \"left\": \"18.3%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto8\"}",
+      "normal": "{\"top\": \"42%\",\"left\": \"18.3%\",\"width\": \"250px\",\"folder\": \"WidgetPhoto8\"}",
       "blue": "{\"top\":\"24.81%\",\"left\":\"27.22%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto8\"}",
       "pink": "{\"top\":\"33.36%\",\"left\":\"48.06%\",\"width\":\"230px\",\"folder\":\"WidgetPhoto8\"}",
       "green": "{\"top\":\"34.39%\",\"left\":\"73.61%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto8\"}",
@@ -122,7 +122,7 @@
       "purple": "{\"top\":\"45.00%\",\"left\":\"24.89%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto8\"}"
     },
     "Photo9": {
-      "normal": "{\"top\": \"65.5%\", \"left\": \"33.5%\", \"width\": \"280px\", \"folder\": \"WidgetPhoto9\"}",
+      "normal": "{\"top\": \"65.5%\",\"left\": \"33.5%\",\"width\": \"280px\",\"folder\": \"WidgetPhoto9\"}",
       "blue": "{\"top\":\"45.17%\",\"left\":\"17.22%\",\"width\":\"150px\",\"folder\":\"WidgetPhoto9\"}",
       "pink": "{\"top\":\"61.42%\",\"left\":\"39.11%\",\"width\":\"380px\",\"folder\":\"WidgetPhoto9\"}",
       "green": "{\"top\":\"60.99%\",\"left\":\"17.22%\",\"width\":\"180px\",\"folder\":\"WidgetPhoto9\"}",
@@ -131,7 +131,7 @@
       "purple": "{\"top\":\"27.63%\",\"left\":\"44.00%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto9\"}"
     },
     "Photo10": {
-      "normal": "{\"top\": \"4.5%\", \"left\": \"63%\", \"width\": \"250px\", \"folder\": \"WidgetPhoto10\"}",
+      "normal": "{\"top\": \"4.5%\",\"left\": \"63%\",\"width\": \"250px\",\"folder\": \"WidgetPhoto10\"}",
       "blue": "{\"top\":\"24.81%\",\"left\":\"8.28%\",\"width\":\"150px\",\"folder\":\"WidgetPhoto10\"}",
       "pink": "{\"top\":\"74.42%\",\"left\":\"86.39%\",\"width\":\"150px\",\"folder\":\"WidgetPhoto10\"}",
       "green": "{\"top\":\"75.02%\",\"left\":\"6.11%\",\"width\":\"180px\",\"folder\":\"WidgetPhoto10\"}",
@@ -140,7 +140,7 @@
       "purple": "{\"top\":\"37.98%\",\"left\":\"56.06%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto10\"}"
     },
     "Photo11": {
-      "normal": "{\"top\": \"26.5%\", \"left\": \"12.5%\", \"width\": \"320px\", \"folder\": \"WidgetPhoto11\"}",
+      "normal": "{\"top\": \"26.5%\",\"left\": \"12.5%\",\"width\": \"320px\",\"folder\": \"WidgetPhoto11\"}",
       "blue": "{\"top\":\"65.01%\",\"left\":\"52.50%\",\"width\":\"340px\",\"folder\":\"WidgetPhoto11\"}",
       "pink": "{\"top\":\"5.56%\",\"left\":\"61.94%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto11\"}",
       "green": "{\"top\":\"4.88%\",\"left\":\"62.17%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto11\"}",
@@ -149,7 +149,7 @@
       "purple": "{\"top\":\"42.43%\",\"left\":\"68.39%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto11\"}"
     },
     "Photo12": {
-      "normal": "{\"top\": \"65.5%\", \"left\": \"11%\", \"width\": \"200px\", \"folder\": \"WidgetPhoto12\"}",
+      "normal": "{\"top\": \"65.5%\",\"left\": \"11%\",\"width\": \"200px\",\"folder\": \"WidgetPhoto12\"}",
       "blue": "{\"top\":\"62.96%\",\"left\":\"72.50%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto12\"}",
       "pink": "{\"top\":\"28.49%\",\"left\":\"61.94%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto12\"}",
       "green": "{\"top\":\"26.69%\",\"left\":\"62.83%\",\"width\":\"170px\",\"folder\":\"WidgetPhoto12\"}",
@@ -158,7 +158,7 @@
       "purple": "{\"top\":\"37.30%\",\"left\":\"81.17%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto12\"}"
     },
     "Photo13": {
-      "normal": "{\"top\": \"16%\", \"left\": \"77%\", \"width\": \"200px\", \"folder\": \"WidgetPhoto13\"}",
+      "normal": "{\"top\": \"16%\",\"left\": \"77%\",\"width\": \"200px\",\"folder\": \"WidgetPhoto13\"}",
       "blue": "{\"top\":\"73.48%\",\"left\":\"40.00%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto13\"}",
       "pink": "{\"top\":\"58.17%\",\"left\":\"61.94%\",\"width\":\"220px\",\"folder\":\"WidgetPhoto13\"}",
       "green": "{\"top\":\"53.89%\",\"left\":\"61.94%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto13\"}",
@@ -167,7 +167,7 @@
       "purple": "{\"top\":\"20.53%\",\"left\":\"4.56%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto13\"}"
     },
     "Photo14": {
-      "normal": "{\"top\": \"13%\", \"left\": \"29%\", \"width\": \"280px\", \"folder\": \"WidgetPhoto14\"}",
+      "normal": "{\"top\": \"13%\",\"left\": \"29%\",\"width\": \"280px\",\"folder\": \"WidgetPhoto14\"}",
       "blue": "{\"top\":\"46.54%\",\"left\":\"3.00%\",\"width\":\"240px\",\"folder\":\"WidgetPhoto14\"}",
       "pink": "{\"top\":\"15.48%\",\"left\":\"73.72%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto14\"}",
       "green": "{\"top\":\"15.48%\",\"left\":\"73.67%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto14\"}",
@@ -176,7 +176,7 @@
       "purple": "{\"top\":\"61.93%\",\"left\":\"14.39%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto14\"}"
     },
     "Photo15": {
-      "normal": "{\"top\": \"8%\", \"left\": \"19%\", \"width\": \"160px\", \"folder\": \"WidgetPhoto15\"}",
+      "normal": "{\"top\": \"8%\",\"left\": \"19%\",\"width\": \"160px\",\"folder\": \"WidgetPhoto15\"}",
       "blue": "{\"top\":\"73.99%\",\"left\":\"27.00%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto15\"}",
       "pink": "{\"top\":\"56.89%\",\"left\":\"74.72%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto15\"}",
       "green": "{\"top\":\"56.89%\",\"left\":\"74.72%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto15\"}",
@@ -185,7 +185,7 @@
       "purple": "{\"top\":\"65.61%\",\"left\":\"43.11%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto15\"}"
     },
     "Photo16": {
-      "normal": "{\"top\": \"44%\", \"left\": \"5%\", \"width\": \"220px\", \"folder\": \"WidgetPhoto16\"}",
+      "normal": "{\"top\": \"44%\",\"left\": \"5%\",\"width\": \"220px\",\"folder\": \"WidgetPhoto16\"}",
       "blue": "{\"top\":\"7.01%\",\"left\":\"59.28%\",\"width\":\"180px\",\"folder\":\"WidgetPhoto16\"}",
       "pink": "{\"top\":\"11.29%\",\"left\":\"85.28%\",\"width\":\"150px\",\"folder\":\"WidgetPhoto16\"}",
       "green": "{\"top\":\"15.40%\",\"left\":\"85.28%\",\"width\":\"150px\",\"folder\":\"WidgetPhoto16\"}",
@@ -194,7 +194,7 @@
       "purple": "{\"top\":\"8.81%\",\"left\":\"30.78%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto16\"}"
     },
     "Photo17": {
-      "normal": "{\"top\": \"78%\", \"left\": \"64.5%\", \"width\": \"240px\", \"folder\": \"WidgetPhoto17\"}",
+      "normal": "{\"top\": \"78%\",\"left\": \"64.5%\",\"width\": \"240px\",\"folder\": \"WidgetPhoto17\"}",
       "blue": "{\"top\":\"63.99%\",\"left\":\"85.00%\",\"width\":\"220px\",\"folder\":\"WidgetPhoto17\"}",
       "pink": "{\"top\":\"35.07%\",\"left\":\"85.67%\",\"width\":\"150px\",\"folder\":\"WidgetPhoto17\"}",
       "green": "{\"top\":\"35.07%\",\"left\":\"85.67%\",\"width\":\"150px\",\"folder\":\"WidgetPhoto17\"}",
@@ -203,7 +203,7 @@
       "purple": "{\"top\":\"64.76%\",\"left\":\"68.06%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto17\"}"
     },
     "Photo18": {
-      "normal": "{\"top\": \"69%\", \"left\": \"79%\", \"width\": \"240px\", \"folder\": \"WidgetPhoto18\"}",
+      "normal": "{\"top\": \"69%\",\"left\": \"79%\",\"width\": \"240px\",\"folder\": \"WidgetPhoto18\"}",
       "blue": "{\"top\":\"75.02%\",\"left\":\"16.00%\",\"width\":\"180px\",\"folder\":\"WidgetPhoto18\"}",
       "pink": "{\"top\":\"53.04%\",\"left\":\"86.67%\",\"width\":\"175px\",\"folder\":\"WidgetPhoto18\"}",
       "green": "{\"top\":\"53.04%\",\"left\":\"86.67%\",\"width\":\"175px\",\"folder\":\"WidgetPhoto18\"}",
@@ -212,7 +212,7 @@
       "purple": "{\"top\":\"65.44%\",\"left\":\"80.33%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto18\"}"
     },
     "Clock": {
-      "normal": "{\"top\": \"26%\", \"left\": \"31%\", \"color\": \"#2C2C2C\", \"align\": \"left\", \"size\": \"6rem\", \"folder\": \"WidgetClock\"}",
+      "normal": "{\"top\": \"26%\",\"left\": \"31%\",\"color\": \"#2C2C2C\",\"align\": \"left\",\"size\": \"6rem\",\"folder\": \"WidgetClock\"}",
       "blue": "{\"top\":\"8.98%\",\"left\":\"41.00%\",\"color\":\"#1A3A5E\",\"align\":\"center\",\"size\":\"8rem\",\"folder\":\"WidgetClock\"}",
       "pink": "{\"top\":\"46.54%\",\"left\":\"28.61%\",\"color\":\"#8A3D68\",\"align\":\"center\",\"size\":\"8rem\",\"folder\":\"WidgetClock\"}",
       "green": "{\"top\":\"55.60%\",\"left\":\"41.00%\",\"color\":\"#2D4F3E\",\"align\":\"center\",\"size\":\"8rem\",\"folder\":\"WidgetClock\"}",
@@ -221,7 +221,7 @@
       "purple": "{\"top\":\"49.44%\",\"left\":\"37.67%\",\"color\":\"#4A2B5E\",\"align\":\"center\",\"size\":\"8rem\",\"folder\":\"WidgetClock\"}"
     },
     "Music": {
-      "normal": "{\"top\": \"1025px\", \"right\": \"3px\", \"width\": \"320px\", \"bgcolor\": \"rgba(255, 255, 255, 0.3)\", \"color\": \"#2C2C2C\", \"borderColor\": \"rgba(200, 225, 255, 0.6)\", \"folder\": \"WidgetMusic\"}",
+      "normal": "{\"top\": \"1025px\",\"right\": \"3px\",\"width\": \"320px\",\"bgcolor\": \"rgba(255, 255, 255, 0.3)\",\"color\": \"#2C2C2C\",\"borderColor\": \"rgba(200, 225, 255, 0.6)\",\"folder\": \"WidgetMusic\"}",
       "blue": "{\"top\":\"90.25%\",\"width\":\"320px\",\"bgcolor\":\"rgba(255, 255, 255, 0.3)\",\"color\":\"#1A3A5E\",\"borderColor\":\"rgba(200, 225, 255, 0.6)\",\"folder\":\"WidgetMusic\",\"left\":\"0.00%\"}",
       "pink": "{\"top\":\"90.25%\",\"width\":\"320px\",\"bgcolor\":\"rgba(255, 255, 255, 0.3)\",\"color\":\"#8A3D68\",\"borderColor\":\"rgba(255, 210, 230, 0.6)\",\"folder\":\"WidgetMusic\",\"left\":\"0.00%\"}",
       "green": "{\"top\":\"90.25%\",\"width\":\"320px\",\"bgcolor\":\"rgba(255, 255, 255, 0.3)\",\"color\":\"#2D4F3E\",\"borderColor\":\"rgba(178, 216, 197, 0.6)\",\"folder\":\"WidgetMusic\",\"left\":\"0.00%\"}",
@@ -230,16 +230,16 @@
       "purple": "{\"top\":\"90.25%\",\"width\":\"320px\",\"bgcolor\":\"rgba(255, 255, 255, 0.3)\",\"color\":\"#4A2B5E\",\"borderColor\":\"rgba(255, 231, 150, 0.6)\",\"folder\":\"WidgetMusic\",\"left\":\"0.00%\"}"
     },
     "Logo": {
-      "normal": "{\"top\": \"11%\", \"left\": \"39.5%\", \"align\": \"center\", \"color\": \"#2C2C2C\", \"size\": \"5rem\", \"folder\": \"WidgetLogo\"}",
-      "blue": "{\"top\":\"4.96%\",\"left\":\"0.00%\",\"align\":\"center\",\"color\":\"#1A3A5E\",\"size\":\"8rem\",\"folder\":\"WidgetLogo\"}",
-      "pink": "{\"top\":\"72.88%\",\"left\":\"-8.72%\",\"align\":\"center\",\"color\":\"#8A3D68\",\"size\":\"8rem\",\"folder\":\"WidgetLogo\"}",
-      "green": "{\"top\":\"71.86%\",\"left\":\"27.22%\",\"align\":\"center\",\"color\":\"#2D4F3E\",\"size\":\"8rem\",\"folder\":\"WidgetLogo\"}",
-      "red": "{\"top\":\"71.94%\",\"left\":\"61.11%\",\"align\":\"center\",\"color\":\"#912F2F\",\"size\":\"8rem\",\"folder\":\"WidgetLogo\"}",
-      "yellow": "{\"top\":\"69.20%\",\"left\":\"49.83%\",\"align\":\"center\",\"color\":\"#A67C00\",\"size\":\"8rem\",\"folder\":\"WidgetLogo\"}",
-      "purple": "{\"top\":\"24.21%\",\"left\":\"6.78%\",\"align\":\"center\",\"color\":\"#4A2B5E\",\"size\":\"8rem\",\"folder\":\"WidgetLogo\"}"
+      "normal": "{\"top\": \"12%\",\"left\": \"40%\",\"align\": \"center\",\"color\": \"#2C2C2C\",\"size\": \"4rem\",\"textTop\":\"Toyota Yaris\",\"textBottom\":\"BMW e36 316i\",\"folder\": \"WidgetLogo\"}",
+      "blue": "{\"top\":\"4.96%\",\"left\":\"0.00%\",\"align\":\"center\",\"color\":\"#1A3A5E\",\"size\":\"8rem\",\"textTop\":\"Sabrina\",\"textBottom\":\"Carpenter\",\"folder\":\"WidgetLogo\"}",
+      "pink": "{\"top\":\"72.88%\",\"left\":\"-8.72%\",\"align\":\"center\",\"color\":\"#8A3D68\",\"size\":\"8rem\",\"textTop\":\"Sabrina\",\"textBottom\":\"Carpenter\",\"folder\":\"WidgetLogo\"}",
+      "green": "{\"top\":\"71.86%\",\"left\":\"27.22%\",\"align\":\"center\",\"color\":\"#2D4F3E\",\"size\":\"8rem\",\"textTop\":\"Sabrina\",\"textBottom\":\"Carpenter\",\"folder\":\"WidgetLogo\"}",
+      "red": "{\"top\":\"71.94%\",\"left\":\"61.11%\",\"align\":\"center\",\"color\":\"#912F2F\",\"size\":\"8rem\",\"textTop\":\"Sabrina\",\"textBottom\":\"Carpenter\",\"folder\":\"WidgetLogo\"}",
+      "yellow": "{\"top\":\"69.20%\",\"left\":\"49.83%\",\"align\":\"center\",\"color\":\"#A67C00\",\"size\":\"8rem\",\"textTop\":\"Sabrina\",\"textBottom\":\"Carpenter\",\"folder\":\"WidgetLogo\"}",
+      "purple": "{\"top\":\"24.21%\",\"left\":\"6.78%\",\"align\":\"center\",\"color\":\"#4A2B5E\",\"size\":\"8rem\",\"textTop\":\"Sabrina\",\"textBottom\":\"Carpenter\",\"folder\":\"WidgetLogo\"}"
     },
     "Stats": {
-      "normal": "{\"top\": \"1035px\", \"left\": \"3px\", \"width\": \"220px\", \"bgcolor\": \"rgba(255, 255, 255, 0.25)\", \"blur\": \"10\", \"border\": \"true\", \"borderColor\": \"rgba(255,255,255,0.4)\", \"color\": \"#2C2C2C\", \"trackColor\": \"rgba(255,255,255,0.3)\", \"barColor\": \"#2C2C2C\", \"barHeight\": \"6px\", \"folder\": \"WidgetStats\"}",
+      "normal": "{\"top\": \"1035px\",\"left\": \"3px\",\"width\": \"220px\",\"bgcolor\": \"rgba(255, 255, 255, 0.25)\",\"blur\": \"10\",\"border\": \"true\",\"borderColor\": \"rgba(255,255,255,0.4)\",\"color\": \"#2C2C2C\",\"trackColor\": \"rgba(255,255,255,0.3)\",\"barColor\": \"#2C2C2C\",\"barHeight\": \"6px\",\"folder\": \"WidgetStats\"}",
       "blue": "{\"top\":\"91.10%\",\"left\":\"0.17%\",\"width\":\"220px\",\"bgcolor\":\"rgba(255, 255, 255, 0.25)\",\"blur\":\"10\",\"border\":\"true\",\"borderColor\":\"rgba(255,255,255,0.4)\",\"color\":\"#1A3A5E\",\"trackColor\":\"rgba(255,255,255,0.3)\",\"barColor\":\"#1A3A5E\",\"barHeight\":\"6px\",\"folder\":\"WidgetStats\"}",
       "pink": "{\"top\":\"91.10%\",\"left\":\"0.17%\",\"width\":\"220px\",\"bgcolor\":\"rgba(255, 255, 255, 0.25)\",\"blur\":\"10\",\"border\":\"true\",\"borderColor\":\"rgba(255,210,230,0.45)\",\"color\":\"#8A3D68\",\"trackColor\":\"rgba(255,255,255,0.3)\",\"barColor\":\"#8A3D68\",\"barHeight\":\"6px\",\"folder\":\"WidgetStats\"}",
       "green": "{\"top\":\"91.10%\",\"left\":\"0.17%\",\"width\":\"220px\",\"bgcolor\":\"rgba(255, 255, 255, 0.25)\",\"blur\":\"10\",\"border\":\"true\",\"borderColor\":\"rgba(178,216,197,0.45)\",\"color\":\"#2D4F3E\",\"trackColor\":\"rgba(255,255,255,0.3)\",\"barColor\":\"#2D4F3E\",\"barHeight\":\"6px\",\"folder\":\"WidgetStats\"}",
@@ -257,7 +257,7 @@
       "purple": "{\"theme\":\"colors\",\"top\":\"89.73%\",\"left\":\"26.67%\",\"width\":\"400px\",\"align\":\"left\",\"color\":\"#4A2B5E\",\"fontSize\":\"1.5rem\",\"fontStyle\":\"normal\",\"fontWeight\":\"700\",\"shadow\":\"0px 2px 10px rgba(147,102,173,0.9)\"}"
     },
     "Year": {
-      "normal": "{\"theme\": \"normal\", \"top\": \"41%\", \"left\": \"79%\", \"width\": \"180px\", \"color\": \"#2C2C2C\"}",
+      "normal": "{\"theme\": \"normal\",\"top\": \"41%\",\"left\": \"79%\",\"width\": \"180px\",\"color\": \"#2C2C2C\"}",
       "blue": "{\"theme\":\"colors\",\"top\":\"75.88%\",\"left\":\"8.28%\",\"width\":\"120px\",\"color\":\"#1A3A5E\"}",
       "pink": "{\"theme\":\"colors\",\"top\":\"3.68%\",\"left\":\"75.78%\",\"width\":\"120px\",\"color\":\"#8A3D68\"}",
       "green": "{\"theme\":\"colors\",\"top\":\"49.19%\",\"left\":\"16.67%\",\"width\":\"120px\",\"color\":\"#2D4F3E\"}",
@@ -275,7 +275,7 @@
       "purple": "{\"theme\":\"normal\",\"top\":\"0.00%\",\"left\":\"0.00%\"}"
     },
     "Record": {
-      "normal": "{\"theme\": \"normal\", \"top\": \"66%\", \"left\": \"22.8%\", \"width\": \"150px\", \"height\": \"200px\", \"bgcolor\": \"#ffffff\", \"textColor\": \"#000000\", \"subColor\": \"#888888\", \"radius\": \"30px\", \"shadow\": \"0 10px 40px rgba(0,0,0,0.1)\"}",
+      "normal": "{\"theme\": \"normal\",\"top\": \"66%\",\"left\": \"22.8%\",\"width\": \"150px\",\"height\": \"200px\",\"bgcolor\": \"#ffffff\",\"textColor\": \"#000000\",\"subColor\": \"#888888\",\"radius\": \"30px\",\"shadow\": \"0 10px 40px rgba(0,0,0,0.1)\"}",
       "blue": "{\"theme\":\"colors\",\"top\":\"40.80%\",\"left\":\"83.89%\",\"width\":\"150px\",\"height\":\"210px\",\"bgcolor\":\"rgba(44, 62, 80, 0.7)\",\"border\":\"6px solid #A0D2EB\",\"rotate\":\"3deg\"}",
       "pink": "{\"theme\":\"colors\",\"top\":\"44.48%\",\"left\":\"3.00%\",\"width\":\"175px\",\"height\":\"225px\",\"bgcolor\":\"rgba(138, 61, 104, 0.72)\",\"border\":\"6px solid #E5B5D0\",\"rotate\":\"-3deg\"}",
       "green": "{\"theme\":\"colors\",\"top\":\"50.47%\",\"left\":\"4.17%\",\"width\":\"175px\",\"height\":\"225px\",\"bgcolor\":\"rgba(45, 79, 62, 0.72)\",\"border\":\"6px solid #B2D8C5\",\"rotate\":\"-3deg\"}",
@@ -284,7 +284,7 @@
       "purple": "{\"theme\":\"colors\",\"top\":\"62.10%\",\"left\":\"27.50%\",\"width\":\"175px\",\"height\":\"225px\",\"bgcolor\":\"rgba(74, 43, 94, 0.72)\",\"border\":\"6px solid #D4C4E9\",\"rotate\":\"-3deg\"}"
     },
     "Strip": {
-      "normal": "{\"theme\": \"normal\", \"top\": \"10%\", \"left\": \"98%\", \"width\": \"50px\", \"bgcolor\": \"transparent\", \"color\": \"#2C2C2C\", \"text\": \"SYSTEM OK /// TERMINAL ACTIVE /// M4 PRO ///\"}",
+      "normal": "{\"theme\": \"normal\",\"top\": \"10%\",\"left\": \"98%\",\"width\": \"50px\",\"bgcolor\": \"transparent\",\"color\": \"#2C2C2C\",\"text\": \"SYSTEM OK /// TERMINAL ACTIVE /// M4 PRO ///\"}",
       "blue": "{\"theme\":\"colors\",\"top\":\"10.01%\",\"left\":\"98.00%\",\"width\":\"50px\",\"bgcolor\":\"transparent\",\"color\":\"#1A3A5E\",\"text\":\"\\u2605 SHORT N' SWEET TOUR \\u2605 VIP ACCESS \\u2605\"}",
       "pink": "{\"theme\":\"colors\",\"top\":\"10.01%\",\"left\":\"98.00%\",\"width\":\"50px\",\"bgcolor\":\"transparent\",\"color\":\"#8A3D68\",\"text\":\"\\u2605 SHORT N' SWEET TOUR \\u2605 VIP ACCESS \\u2605\"}",
       "green": "{\"theme\":\"colors\",\"top\":\"10.01%\",\"left\":\"98.00%\",\"width\":\"50px\",\"bgcolor\":\"transparent\",\"color\":\"#2D4F3E\",\"text\":\"\\u2605 SHORT N' SWEET TOUR \\u2605 VIP ACCESS \\u2605\"}",

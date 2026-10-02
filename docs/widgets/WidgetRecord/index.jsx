@@ -61,7 +61,7 @@ export const render = ({output}) => {
   const isPlatinum = config.theme === 'colors';
   
   const frameWidth = parseInt(config.width) || 150;
-  const discSize = frameWidth * (isPlatinum ? 0.7 : 0.65); 
+  const discSize = frameWidth * (isPlatinum ? 0.8 : 0.65);
 
   const frameStyle = {
     position: 'absolute',
@@ -83,7 +83,7 @@ export const render = ({output}) => {
     alignItems: 'center',
     justifyContent: 'center',
     padding: '15px',
-    gap: '15px',
+    gap: isPlatinum ? '10px' : '15px',
     transition: 'all 0.5s ease',
     transform: config.rotate ? `rotate(${config.rotate})` : 'none',
   };
