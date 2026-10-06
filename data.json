@@ -158,7 +158,7 @@
       "purple": "{\"top\":\"37.30%\",\"left\":\"81.17%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto12\"}"
     },
     "Photo13": {
-      "normal": "{\"top\": \"16%\",\"left\": \"77%\",\"width\": \"200px\",\"folder\": \"WidgetPhoto13\"}",
+      "normal": "{\"top\": \"16%\",\"left\": \"77%\",\"width\": \"270px\",\"folder\": \"WidgetPhoto13\"}",
       "blue": "{\"top\":\"73.48%\",\"left\":\"40.00%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto13\"}",
       "pink": "{\"top\":\"58.17%\",\"left\":\"61.94%\",\"width\":\"220px\",\"folder\":\"WidgetPhoto13\"}",
       "green": "{\"top\":\"53.89%\",\"left\":\"61.94%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto13\"}",
@@ -176,7 +176,7 @@
       "purple": "{\"top\":\"61.93%\",\"left\":\"14.39%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto14\"}"
     },
     "Photo15": {
-      "normal": "{\"top\": \"8%\",\"left\": \"19%\",\"width\": \"160px\",\"folder\": \"WidgetPhoto15\"}",
+      "normal": "{\"top\": \"5.6%\",\"left\": \"19.4%\",\"width\": \"160px\",\"folder\": \"WidgetPhoto15\"}",
       "blue": "{\"top\":\"73.99%\",\"left\":\"27.00%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto15\"}",
       "pink": "{\"top\":\"56.89%\",\"left\":\"74.72%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto15\"}",
       "green": "{\"top\":\"56.89%\",\"left\":\"74.72%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto15\"}",
@@ -203,7 +203,7 @@
       "purple": "{\"top\":\"64.76%\",\"left\":\"68.06%\",\"width\":\"200px\",\"folder\":\"WidgetPhoto17\"}"
     },
     "Photo18": {
-      "normal": "{\"top\": \"69%\",\"left\": \"79%\",\"width\": \"240px\",\"folder\": \"WidgetPhoto18\"}",
+      "normal": "{\"top\": \"69%\",\"left\": \"79%\",\"width\": \"155px\",\"folder\": \"WidgetPhoto18\"}",
       "blue": "{\"top\":\"75.02%\",\"left\":\"16.00%\",\"width\":\"180px\",\"folder\":\"WidgetPhoto18\"}",
       "pink": "{\"top\":\"53.04%\",\"left\":\"86.67%\",\"width\":\"175px\",\"folder\":\"WidgetPhoto18\"}",
       "green": "{\"top\":\"53.04%\",\"left\":\"86.67%\",\"width\":\"175px\",\"folder\":\"WidgetPhoto18\"}",
