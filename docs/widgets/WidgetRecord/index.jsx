@@ -62,6 +62,7 @@ export const render = ({output}) => {
   
   const frameWidth = parseInt(config.width) || 150;
   const discSize = frameWidth * (isPlatinum ? 0.8 : 0.65);
+  const artworkSize = frameWidth * (isPlatinum ? 0.9 : 0.8);
 
   const frameStyle = {
     position: 'absolute',
@@ -89,9 +90,9 @@ export const render = ({output}) => {
   };
 
   const artworkStyle = {
-    width: `${discSize}px`,
-    height: `${discSize}px`,
-    borderRadius: '50%',
+    width: `${artworkSize}px`,
+    height: `${artworkSize}px`,
+    borderRadius: '18px',
     objectFit: 'cover',
     boxShadow: isPlatinum ? '0 0 10px rgba(255,255,255,0.4)' : '0 4px 15px rgba(0,0,0,0.3)',
     flexShrink: 0
@@ -144,6 +145,14 @@ export const render = ({output}) => {
     width: '100%'
   };
 
+  const titleStyle = {
+    ...textStyle,
+    whiteSpace: 'normal',
+    display: '-webkit-box',
+    WebkitLineClamp: 3,
+    WebkitBoxOrient: 'vertical'
+  };
+
   return (
     <div style={frameStyle}>
         {isPlaying ? (
@@ -163,11 +172,11 @@ export const render = ({output}) => {
                     <div style={{fontSize: '0.4rem', fontWeight: 'bold', letterSpacing: '0.5px', color: '#555'}}>PRESENTED TO</div>
                     <div style={{...textStyle, fontSize: '0.7rem', fontWeight: '900', color: '#000', margin: '1px 0', textTransform: 'uppercase'}}>{artist}</div>
                     <div style={{fontSize: '0.35rem', color: '#666'}}>TO COMMEMORATE PLATINUM SALES OF</div>
-                    <div style={{...textStyle, fontSize: '0.6rem', fontStyle: 'italic', fontWeight: 'bold', color: '#1A3A5E', marginTop: '1px'}}>"{song}"</div>
+                    <div style={{...titleStyle, fontSize: '0.6rem', fontStyle: 'italic', fontWeight: 'bold', color: '#1A3A5E', marginTop: '1px'}}>"{song}"</div>
                 </div>
             ) : (
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%'}}>
-                    <div style={{...textStyle, fontSize: '0.9rem', fontWeight: '900', color: config.textColor || '#000', textTransform: 'uppercase', letterSpacing: '-0.5px'}}>{song}</div>
+                    <div style={{...titleStyle, fontSize: '0.9rem', fontWeight: '900', color: config.textColor || '#000', textTransform: 'uppercase', letterSpacing: '-0.5px'}}>{song}</div>
                     <div style={{...textStyle, fontSize: '0.6rem', fontWeight: '600', color: config.subColor || '#888', letterSpacing: '1px'}}>{artist}</div>
                 </div>
             )}
