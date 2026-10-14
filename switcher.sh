@@ -16,8 +16,6 @@ SOUND_NORMAL="$BASE_SOUNDS/normal.mp3"
 NB_WIDGETS_PHOTO=18
 CURRENT_THEME=$(jq -r '.theme // 1' "$data")
 
-APPS_TO_ICON_SWITCH=("LidAngleSensor" "Open WebUI" "VLC" "Ollama" "Xcode" "osu!" "XQuartz" "Pages" "Numbers" "Keynote" "Gifski" "flipclock" "Android Studio" "Firefox" "Comet" "Visual Studio Code" "WhatsApp" "Spotify" "Discord" "VinylPod" "GIMP" "Steam" "Microsoft Excel" "Microsoft PowerPoint" "Microsoft Word" "Lunar Client" "JetBrains Toolbox" "Rider" "Telegram" "BlueStacks" "BlueStacksMIM" "Emacs" "Google Chrome" "Google Docs" "Google Drive" "Google Sheets" "Google Slides" "GPG Keychain" "HypeRCON" "Minecraft" "OBS" "TV Time" "Shop" "PopSQL" "WebStorm" "CLion" "Notion Calendar" "Studio" "Übersicht" "NordVPN" "Anytype" "Inkscape")
-
 get_widget_config() {
     local widget_name="$1"
     local variant="$2"
@@ -192,8 +190,17 @@ swap_icons() {
     local max_jobs=6
     local app_path
     local icon_path
+    local app_name
+
+    if [ ! -d "$source_folder" ]; then
+        echo "⚠️  Dossier d'icônes introuvable : $source_folder"
+        return 1
+    fi
     
-    for app_name in "${APPS_TO_ICON_SWITCH[@]}"; do
+    while IFS= read -r -d '' icon_path; do
+        app_name="${icon_path##*/}"
+        app_name="${app_name%.png}"
+
         if [ -d "/Applications/${app_name}.app" ]; then
             app_path="/Applications/${app_name}.app"
         elif [ -d "/System/Applications/${app_name}.app" ]; then
@@ -209,19 +216,6 @@ swap_icons() {
             continue
         fi
 
-        icon_path=""
-        for ext in png icns jpg; do
-            if [ -f "$source_folder/${app_name}.${ext}" ]; then
-                icon_path="$source_folder/${app_name}.${ext}"
-                break
-            fi
-        done
-
-        if [ -z "$icon_path" ]; then
-            echo "❓ Pas d'image pour $app_name dans $theme_subfolder"
-            continue
-        fi
-
         while [ "$(jobs -rp | wc -l)" -ge "$max_jobs" ]; do
             wait -n 2>/dev/null || sleep 0.1
         done
@@ -231,7 +225,7 @@ swap_icons() {
             sudo fileicon set "$app_path" "$icon_path" -q 2>/dev/null
             sudo touch "$app_path"
         } &
-    done
+    done < <(find "$source_folder" -maxdepth 1 -type f -name '*.png' -print0)
 
     wait
 }
@@ -243,7 +237,7 @@ setup_dock() {
     dockutil --add "/Applications/Safari.app" --no-restart >/dev/null 2>&1
     dockutil --add "/Applications/Visual Studio Code.app" --no-restart >/dev/null 2>&1
     dockutil --add "/Applications/WhatsApp.app/" --no-restart >/dev/null 2>&1
-    dockutil --add "/Applications/Spotify.app" --no-restart >/dev/null 2>&1
+    dockutil --add "/Applications/Deezer.app" --no-restart >/dev/null 2>&1
 }
 
 sudo -v 
