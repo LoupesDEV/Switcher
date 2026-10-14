@@ -1,25 +1,23 @@
 export const command = `
-  cat WidgetRecord/layout.json && echo "|||" && 
-  osascript -e '
-    if application "Spotify" is running then
-        tell application "Spotify"
-            try
-                set cTrack to current track
-                set tName to name of cTrack
-                set tArtist to artist of cTrack
-                set tAlbum to album of cTrack
-                set tArt to artwork url of cTrack
-        set tDuration to duration of cTrack -- in milliseconds
-        set tPos to player position -- in seconds
-                set pState to player state as string
-        return pState & "@@@" & tName & "@@@" & tArtist & "@@@" & tArt & "@@@" & tPos & "@@@" & tDuration
-            on error
-                return "stopped"
-            end try
-        end tell
-    else
-        return "stopped"
-    end if'
+  cat WidgetRecord/layout.json && echo "|||" &&
+  if [ -x /opt/homebrew/bin/nowplaying-cli ]; then
+  NOW_PLAYING=$(/opt/homebrew/bin/nowplaying-cli get --json title artist artworkUrl playbackRate)
+  elif [ -x /usr/local/bin/nowplaying-cli ]; then
+  NOW_PLAYING=$(/usr/local/bin/nowplaying-cli get --json title artist artworkUrl playbackRate)
+  else
+  NOW_PLAYING='{"title":null,"artist":null,"artworkUrl":null,"playbackRate":0}'
+  fi
+  if [ "$(printf '%s' "$NOW_PLAYING" | jq -r '.title // empty')" ] &&
+   [ "$(printf '%s' "$NOW_PLAYING" | jq -r '.artworkUrl // empty')" = "" ]; then
+  TITLE=$(printf '%s' "$NOW_PLAYING" | jq -r '.title')
+  ARTIST=$(printf '%s' "$NOW_PLAYING" | jq -r '.artist // empty')
+  COVER=$(curl -fsS --max-time 5 --get --data-urlencode "q=$TITLE $ARTIST" "https://api.deezer.com/search" 2>/dev/null |
+    jq -r '.data[0].album.cover_xl // empty')
+  if [ -n "$COVER" ]; then
+    NOW_PLAYING=$(printf '%s' "$NOW_PLAYING" | jq --arg cover "$COVER" '.artworkUrl = $cover')
+  fi
+  fi
+  printf '%s\n' "$NOW_PLAYING"
 `;
 
 export const refreshFrequency = 500;
@@ -40,22 +38,20 @@ export const render = ({output}) => {
   try { config = JSON.parse(jsonRaw); } catch(e) { return null; }
 
   let song = "Aucune musique";
-  let artist = "Spotify";
+  let artist = "Spotify / Deezer";
   let artwork = "";
   let isPlaying = false;
 
-  if (musicRaw && musicRaw.includes("@@@")) {
-    const parts = musicRaw.trim().split("@@@");
-    if (parts.length >= 4) {
-        song = parts[1];
-        artist = parts[2];
-        artwork = parts[3];
-        isPlaying = true;
+  try {
+    const music = JSON.parse(musicRaw.trim());
+    if (music.title && music.artist) {
+      song = music.title;
+      artist = music.artist;
+      artwork = music.artworkUrl || "";
+      isPlaying = Number(music.playbackRate) > 0 && Boolean(artwork);
     }
-  } else if (musicRaw && (musicRaw.includes("stopped") || musicRaw.includes("paused"))) {
-    song = "Aucune musique";
-    artist = "Spotify";
-    isPlaying = false;
+  } catch (e) {
+    // No media metadata available.
   }
 
   const isPlatinum = config.theme === 'colors';
