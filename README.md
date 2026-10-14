@@ -147,8 +147,8 @@ Vous pouvez trouver tout mes widgets dans le dossier `docs/widgets`, vous pouvez
 ### Ajout d'une nouvelle application
 
 Pour modifier l'icône d'une nouvelle app :
-1. Ajoutez le nom exact de l'application dans le tableau `APPS_TO_ICON_SWITCH` au début du script `.sh`.
-2. Placez l'image correspondante (`NomDeLApp.png` ou `.icns`) dans vos sous-dossiers `ICNS/Normal` et `ICNS/Colors/...`.
+1. Placez l'image correspondante (`NomDeLApp.png`) dans vos sous-dossiers `ICNS/Normal` et `ICNS/Colors/...`.
+2. Le script détecte automatiquement les fichiers PNG présents dans le dossier de la variante sélectionnée et utilise leur nom, sans l'extension `.png`, comme nom d'application.
 
 # Démo
 
